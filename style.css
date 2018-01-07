@@ -1,0 +1,17 @@
+/*
+Theme Name: Custom Placeminute pro
+Theme URI: http://wordpress.bbxdesign.com
+Description: Thème custom Placeminute pro
+Version: 1.0
+Author: Digital No Limit
+*/
+
+@import url("css/reset.css");
+@import url("fonts/icons.css");
+@import url("fonts/fonts.css");
+@import url("css/general.css");
+@import url("css/menu.css");
+@import url("css/page.css");
+@import url("css/template_1.css");
+@import url("css/content_home.css");
+@import url("css/footer.css");

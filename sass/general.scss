@@ -1,0 +1,14 @@
+@import "vars.scss";
+
+body{
+    font-family: 'raleway-regular';
+    font-size : $font-size-normal;
+    line-height : 1.5;
+    -webkit-text-size-adjust:100%;
+    strong{
+        font-family: 'raleway-semibold';
+    }
+}
+
+
+

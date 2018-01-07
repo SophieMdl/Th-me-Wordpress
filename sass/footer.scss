@@ -1,0 +1,36 @@
+@import "vars.scss";
+
+footer{
+    width : 100%;
+    background-color : #000;
+    ul#menu-footer{
+        padding: 40px 10px 20px 10px;
+        text-align: center;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                color: #fff;
+                font-size : 14px;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            &:not(:last-child):after{
+                display: inline-block;
+                vertical-align : middle;
+                content : '';
+                border-radius : 30px;
+                width : 4px;
+                height : 4px;
+                margin : 0 8px 0 10px;
+                background-color: #676767;
+            }
+        }
+    }
+}
+@media screen and (max-width : 480px) {
+    footer ul#menu-footer li {
+        display: block;
+    }
+}

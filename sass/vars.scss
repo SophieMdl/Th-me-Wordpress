@@ -1,0 +1,165 @@
+/***************** VARIABLES *****************/
+$main-color : #D52C65;
+$main-color-darker : #A31A48;
+$main-color-hover : #C42057;
+$main-color-08 : rgba(213,44,120,0.8);
+$text-dark : #181818;
+$background-submenu : rgba(0,0,0,0.3);
+$background-menu : rgba(0,0,0,0.7);
+$background-partenaires : rgba(0,0,0,0.6);
+$background-grey :#fafafa;
+
+$font-size-normal : 16px;
+$width-content : 1200px;
+
+$white-border : 1px solid rgba(255,255,255,0.2);
+
+/***************** MIXINS *****************/
+@mixin white-border(){
+    position: absolute;
+    width : 100%;
+    height : 5px;
+    background: url('../img/border_white.png') repeat-x;
+}
+@mixin main-title($color) {
+    font-size: 30px;
+    color: $color;
+    font-family: 'raleway-regular';
+    line-height: 1.6;
+    &::after {
+        display: inline-block;
+        content: "";
+        width: 7px;
+        height: 7px;
+        margin-left: 10px;
+        background-color: $main-color;
+    }
+    //Wordpress ajoute des balises strong automatiquement
+    strong{
+        font-family: 'raleway-regular';
+    }
+}
+
+@mixin h2-style(){
+    font-size: 20px;
+    color: $main-color;
+    text-transform : uppercase;
+    margin-bottom : 50px;
+    &::after{
+        display: block;
+        content : "";
+        background-image: url('../img/texture_title.png');
+        background-repeat : repeat-x;
+        margin-top : 10px;
+        width: 70px;
+        height: 8px;
+    }
+    //Wordpress ajoute des balises strong automatiquement
+    strong{
+        font-family: 'raleway-regular';
+    }
+}
+
+@mixin main-content() {
+    padding : 100px 30px 60px 30px;
+    max-width : $width-content;
+    margin : 0 auto;
+    font-family : "raleway-regular";
+    font-size : $font-size-normal;
+    color : $text-dark;
+    h1{
+        @include main-title(black);
+    }
+    h2{
+        @include h2-style();
+    }
+    h3{
+        font-family: 'raleway-semibold';
+        margin-bottom: 20px;
+    }
+}
+
+@mixin pink-button(){
+    cursor : pointer;
+    background-color: $main-color;
+    box-shadow: 5px 5px 0px -1px rgba(163,26,72,1);
+    transition : background-color .4s;
+    a{
+        position: relative;
+        display: inline-block;
+        padding : 15px 100px 15px 30px;
+    }
+    &:hover {
+        background-color: $main-color-hover;
+    }
+    span.text {
+        color: #fff;
+        font-size: 19px;
+    }
+    .end-button{
+        span.border-dashed{
+            position: absolute;
+            width: 65px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            border-left : 1px dashed $main-color-darker;
+        }
+        span.icon-arrow-right {
+            position: absolute;
+            font-size: 22px;
+            right : 25px;
+            top : calc(50% - 11px);
+        }
+    }
+    @media screen and (max-width : 480px){
+        a {
+            padding: 20px 70px 20px 20px;
+        }
+        span.text {
+            font-size: 16px;
+        }
+        .end-button {
+            span.border-dashed {
+                width: 54px;
+            }
+            span.icon-arrow-right {
+                font-size: 20px;
+                right: 20px;
+            }
+        }
+    }
+}
+
+@mixin call-to-action(){
+    position: relative;
+    width : 100%;
+    padding-top : 60px;
+    padding-bottom : 60px;
+    background-color: $background-grey;
+    .call-to-action-content {
+        font-size : 0;
+        margin : 0 auto;
+        width : 80%;
+        h4 {
+            @include main-title(black);
+            display: inline-block;
+            vertical-align: middle;
+            margin-right : 20px;
+            width: calc(100% - 20px - 300px);
+        }
+        .pink-button {
+            display: inline-block;
+            @include pink-button();
+        }
+    }
+    @media screen and (max-width : 730px) {
+        .call-to-action-content {
+            h4 {
+                width: 100%;
+                margin-bottom: 30px;
+                font-size: 24px;
+            }
+        }
+    }
+}

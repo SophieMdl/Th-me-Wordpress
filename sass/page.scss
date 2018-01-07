@@ -1,0 +1,22 @@
+@import "vars.scss";
+
+#page {
+    .page-content{
+        position: relative;
+        @include main-content();
+        .the-content{
+            margin-bottom : 50px;
+        }
+    }
+    .white-border-bottom {
+        @include white-border();
+        transform: rotate(180deg);
+    }
+    .site-header {
+        background: black;
+    }
+    .call-to-action-w{
+        @include call-to-action();
+    }
+}
+

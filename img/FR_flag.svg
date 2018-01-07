@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="15px" viewBox="0 0 21 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>FR_flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(-1306.000000, -9.000000)">
+            <g transform="translate(7.000000, 0.000000)" id="menu">
+                <g transform="translate(259.665067, 5.412235)">
+                    <g id="FR_flag" transform="translate(1040.000000, 3.000000)">
+                        <g id="002-france" transform="translate(0.120037, 0.960816)">
+                            <path d="M6.59842698,14.1514609 L0.341313279,14.1514609 C0.152833189,14.1514609 0,13.9848323 0,13.7793392 L0,0.383587248 C0,0.17809408 0.152833189,0.011465465 0.341313279,0.011465465 L6.59842698,0.011465465 L6.59842698,14.1514609 Z" id="Shape" fill="#41479B" fill-rule="nonzero"></path>
+                            <rect id="Rectangle-path" fill="#F5F5F5" fill-rule="nonzero" x="6.59854297" y="0.0116762272" width="6.59854297" height="14.1400376"></rect>
+                            <path d="M19.453929,14.1514609 L13.1968153,14.1514609 L13.1968153,0.0115076174 L19.453929,0.0115076174 C19.6424091,0.0115076174 19.7952423,0.178136232 19.7952423,0.383629401 L19.7952423,13.7793813 C19.7952423,13.9849166 19.6424091,14.1514609 19.453929,14.1514609 Z" id="Shape" fill="#FF4B55" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
